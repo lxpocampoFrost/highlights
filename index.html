@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Highlights</title>
+    <style>
+      [highlight-attr-type="content-list"] {
+        height: calc(100dvh - 12dvh);
+        position: relative;
+        overflow: hidden;
+      }
+
+      [highlight-attr-type="content"] {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        z-index: 1;
+      }
+
+      [highlight-attr-type="content"]:first-child {
+        position: relative;
+        z-index: 2;
+      }
+
+      .highlight-bar-wrap {
+        position: absolute;
+        top: 14px;
+        width: 100%;
+        padding: 0px 14px;
+        gap: 6px;
+        z-index: 9;
+        display: flex;
+        box-sizing: border-box;
+      }
+      
+      .highlight-bar {
+        width: 100%;
+        height: 2px;
+        max-width: 100%;
+        background-color: rgba(255,255,255,.35);
+      }
+
+      .highlight-progress {
+        width: 0%;
+        height: 100%;
+        background-color: #fff;
+      }
+
+      .highlight-progress.active {
+        width: 100%;
+      }
+
+      .scroll-container {
+        width: 630px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="scroll-container">
+      <div class="highlight-asset-container" highlight-attr-type="content-list">
+        <img src="https://assets-global.website-files.com/6385bc49c833021307b6c14f/6579d4d83aef99f1a21290e2_wise-words-1.webp" highlight-attr-type="content"></img>
+        <img src="https://assets-global.website-files.com/6385bc49c833021307b6c14f/6579d4dc233a11e5ea0bfe7d_wise-words-2.webp" highlight-attr-type="content"></img>
+        <img src="https://assets-global.website-files.com/6385bc49c833021307b6c14f/6579d4e07b5c40f71b1edfd0_wise-words-3.webp" highlight-attr-type="content"></img>
+        <img src="https://assets-global.website-files.com/6385bc49c833021307b6c14f/6579d4e31a652395d2100687_wise-words-4.webp" highlight-attr-type="content"></img>
+        <img src="https://assets-global.website-files.com/6385bc49c833021307b6c14f/6579d4e575dee6be2e52ae36_wise-words-5.webp" highlight-attr-type="content"></img>
+       
+      </div>
+      <div class="highlight-asset-container" highlight-attr-type="content-list">
+        <img src="https://assets-global.website-files.com/6385bc49c833021307b6c14f/6579d4af9d0fe3f07ea6243d_getting-started-1.webp" highlight-attr-type="content"></img>
+        <img src="https://assets-global.website-files.com/6385bc49c833021307b6c14f/6579d4b67251a51d73f5edba_getting-started-3.webp" highlight-attr-type="content"></img>
+        <img src="https://assets-global.website-files.com/6385bc49c833021307b6c14f/6579d4b92649a0006ea9db89_getting-started-4.webp" highlight-attr-type="content"></img>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script src="/index.js"></script>
+    <script>
+      let sample = new Highlights();
+
+      console.log(sample);
+    </script>
+  </body>
+</html>
