@@ -54,7 +54,6 @@ class Highlights {
                 let clickAreaAllocation = Math.ceil(0.50 * currentNode.node.getBoundingClientRect().width);
                 let HiglightBarArr = [...currentNode.node.querySelectorAll('.highlight-progress')];
                 let ContentArr = [...currentNode.content];
-                console.log(ContentArr);
 
                 if(clickX < clickAreaAllocation) {
                     //Previous
