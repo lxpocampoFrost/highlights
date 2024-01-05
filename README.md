@@ -11,14 +11,14 @@ To use Highlights simply call the Highlights object after you import the JS:
 
 On instantiation Highlights will look for two key data-attributes:
 
-1. highlight-attr-type="content-list" - Add this to the container where your slides are placed
+1. **highlight-attr-type="content-list"** - Add this to the container where your slides are placed
    ```HTML
       <div class="highlight-asset-container" highlight-attr-type="content-list">
 
       </div>
    ```
     
-2. highlight-attr-type="content" - Add this to each individaul content type inside your container.
+2. **highlight-attr-type="content"** - Add this to each individaul content type inside your container.
    ```HTML
       <div highlight-attr-type="content-list">
         <img highlight-attr-type="content"></img>
